@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.player{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.decrease-life{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.increase-life{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.decrease-life2{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.increase-life2{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+h1{
+    font-size: 70px;
+}
+.player-one h1{
+    transform: rotate(90deg);
+}
+.player-two h1{
+    transform: rotate(270deg);
+}
+.player-three h1{
+    transform: rotate(90deg);
+}
+.player-four h1{
+    transform: rotate(270deg);
+}
+button{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}

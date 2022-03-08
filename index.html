@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG LifeCounter</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="player player-one">
+        <h1>40</h1>
+        <div class="decrease-life2" onclick="decreasePlayerOneLife()"></div>
+        <div class="increase-life2" onclick="increasePlayerOneLife()"></div>
+    </div>
+    <div class="player player-two">
+        <h1>40</h1>
+        <div class="decrease-life" onclick="decreasePlayerTwoLife()"></div>
+        <div class="increase-life" onclick="increasePlayerTwoLife()"></div>
+    </div>
+    <div class="player player-three">
+        <h1>40</h1>
+        <div class="decrease-life2" onclick="decreasePlayerThreeLife()"></div>
+        <div class="increase-life2" onclick="increasePlayerThreeLife()"></div>
+    </div>
+    <div class="player player-four">
+        <h1>40</h1>
+        <div class="decrease-life" onclick="decreasePlayerFourLife()"></div>
+        <div class="increase-life" onclick="increasePlayerFourLife()"></div>
+    </div>
+    <button onclick="resetLife()"></button:>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
