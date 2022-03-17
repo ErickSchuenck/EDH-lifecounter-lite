@@ -77,10 +77,12 @@ function dice(){
     setTimeout(() => {eraseDisplay()}, 5000);
 
     function display(){
+        for (let i = 0; i < players.length; i++){
+            players[i].classList.remove('red')
+        }
     players[starter].classList.add('red')
     }
     function eraseDisplay(){
-        console.log(players)
         for (let i = 0; i < players.length; i++){
             players[i].classList.remove('red')
         }
