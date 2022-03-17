@@ -68,3 +68,21 @@ function resetLife(){
         lives[i].innerHTML = `40`
     }
 }
+function dice(){
+    let starter = [0,1,2,3];
+    starter = starter.sort(() => Math.random() - 0.5);
+    starter = starter[0]
+    let players = document.querySelectorAll('.player');
+    display();
+    setTimeout(() => {eraseDisplay()}, 5000);
+
+    function display(){
+    players[starter].classList.add('red')
+    }
+    function eraseDisplay(){
+        console.log(players)
+        for (let i = 0; i < players.length; i++){
+            players[i].classList.remove('red')
+        }
+    }
+}
